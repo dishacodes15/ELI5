@@ -1,0 +1,42 @@
+.eli5-tooltip {
+  position: absolute;
+  z-index: 2147483647;
+  max-width: 300px;
+  min-width: 200px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 12px 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.13);
+  font-family: system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+  color: #1a1a1a;
+}
+.eli5-header {
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #1a73e8;
+}
+.eli5-body { color: #222; }
+.eli5-close {
+  position: absolute;
+  top: 8px; right: 10px;
+  background: none; border: none;
+  cursor: pointer; font-size: 14px; color: #aaa;
+}
+.eli5-close:hover { color: #555; }
+.eli5-error { color: #b91c1c; font-size: 13px; }
+.eli5-loading {
+  display: flex; align-items: center;
+  gap: 10px; color: #888; font-size: 13px;
+}
+.eli5-spinner {
+  width: 14px; height: 14px; flex-shrink: 0;
+  border: 2px solid #e0e0e0;
+  border-top-color: #1a73e8;
+  border-radius: 50%;
+  animation: eli5-spin 0.7s linear infinite;
+}
+@keyframes eli5-spin { to { transform: rotate(360deg); } }

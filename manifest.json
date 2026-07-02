@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "ELI5 — Explain Like I'm 5",
+  "version": "1.0",
+  "permissions": ["contextMenus", "storage", "activeTab", "scripting"],
+  "host_permissions": ["https://generativelanguage.googleapis.com/*"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"],
+    "css": ["content.css"]
+  }],
+  "action": { "default_popup": "popup.html" },
+  "content_security_policy": {
+    "extension_pages": "default-src 'self'; script-src 'self'; connect-src https://generativelanguage.googleapis.com"
+  }
+}

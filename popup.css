@@ -1,0 +1,21 @@
+ body { width: 270px; padding: 16px; font-family: system-ui; font-size: 14px; margin: 0; }
+    h3   { margin: 0 0 4px; font-size: 15px; }
+    p.sub { margin: 0 0 12px; font-size: 12px; color: #777; }
+    label { font-size: 12px; color: #555; }
+    input {
+      width: 100%; margin: 5px 0 10px; padding: 7px 8px;
+      box-sizing: border-box; border: 1px solid #ccc;
+      border-radius: 6px; font-size: 13px;
+    }
+    button {
+      width: 100%; padding: 8px; background: #1a73e8;
+      color: #fff; border: none; border-radius: 6px;
+      cursor: pointer; font-size: 14px;
+    }
+    button:hover { background: #1558b0; }
+    #status { margin: 8px 0 0; font-size: 12px; color: green; display: none; }
+    a { font-size: 12px; color: #1a73e8; display: block; margin-top: 10px; }
+    #status          { margin: 8px 0 0; font-size: 12px; display: none; }
+#status.visible  { display: block; }
+#status.success  { color: green; }
+#status.error    { color: #b91c1c; }
